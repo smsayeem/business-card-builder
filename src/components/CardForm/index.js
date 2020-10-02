@@ -5,6 +5,8 @@ import './style.css';
 
 const CardForm = ({ handleChange, handleSubmit, handleImage }) => {
 
+
+  // when 'Upload Avatar' button is clicked this function target the input ('#upload-button') and add a callback function to upload image
   const clickUpload=()=>{
     const uploadBtn = document.querySelector('#upload-button');
     uploadBtn.click();
@@ -120,8 +122,11 @@ const CardForm = ({ handleChange, handleSubmit, handleImage }) => {
           </div>
           {/* buttons */}
           <div className="btn-group ">
+            {/* this input allows to select image files. It is active but hidden as per design  */}
             <input id="upload-button" type='file' hidden/>
-            <button type = 'file' className = "btn btn-avatar" onClick = {clickUpload}>Upload Avatar</button>
+            {/* this button will call a function 'clickUpload' that will trigger the input above to upload an image */}
+            <button className = "btn btn-avatar" onClick = {clickUpload}>Upload Avatar</button>
+            {/* no fnctionality added for this button as it is not part of the test */}
             <button type = 'submit' className = "btn btn-hcard">Create hCard</button>
           </div>
         </section>
