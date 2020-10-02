@@ -11,7 +11,7 @@
 
   ## Local Development
 
-To run the app local development environment run the following command
+To run the app in the local development environment run the following command
 
 ```bash
 npm install

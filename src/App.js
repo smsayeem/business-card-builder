@@ -11,7 +11,7 @@ function App() {
   const [user, setUser] = useState({});
 
   // keep image url that is uploaded via 'Upload Avatar' button click in the form
-  const [image, setImage] = useState({ preview: '', raw: '' });
+  const [image, setImage] = useState({ preview_imgUrl: ''});
 
   const handleImage = (e) => {
     // 'preview_imgUrl' is used for screen display. 'URL.createObjectURL(obj)' creates a DOMString containing a URL representing the object given in the parameter
@@ -25,12 +25,12 @@ function App() {
     
   }
 
-  // No functionality added for the submit button yet.
+  // No functionality added for the submit button.
   const handleSubmit =(e)=>{
-    // form default actin is prevented. it wont reset/refresh the form. 
+    // form default action is prevented. it wont reset/refresh the form. 
     e.preventDefault();
   }
-  
+
   return (
     <section className='App'>
       {/* helmet is used for individual page meta info */}
