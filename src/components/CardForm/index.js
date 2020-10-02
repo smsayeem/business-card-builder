@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import './style.css';
 
-const CardForm = (props) => {
-  const {handleChange, handleSubmit, handleImage} = props;
+const CardForm = ({ handleChange, handleSubmit, handleImage }) => {
 
   const clickUpload=()=>{
     const uploadBtn = document.querySelector('#upload-button');
@@ -128,5 +129,17 @@ const CardForm = (props) => {
     </div>
   )
 }
+
+CardForm.propTypes = {
+  handleChange: PropTypes.func, 
+  handleSubmit: PropTypes.func, 
+  handleImage: PropTypes.func,
+};
+
+CardForm.defaultProps = {
+  handleChange: null, 
+  handleSubmit: null, 
+  handleImage: null,
+};
 
 export default CardForm

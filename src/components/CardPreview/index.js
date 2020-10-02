@@ -1,16 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import FallBackImg from '../Assets/sample_fallback.png';
+
 import './style.css';
 
-const CardPreview = ({user, avatar: { preview_imgUrl }}) => {
-  const {email, phone, houseno, street, suburb, state, postcode, country} = user;
+const CardPreview = ({ user, avatar: { preview_imgUrl } }) => {
+  const {givenname, surname, email, phone, houseno, street, suburb, state, postcode, country} = user;
+  console.log('user=', user);
   
   return (
     <section className="preview">
           <h1 className="card-title">hCard preview</h1>
           {/* preview card header */}
           <header className="card-header">
-            <h2>sam fairfax</h2>
+            <h2>{givenname} {surname}</h2>
             <div className="card-avatar">
               <img src={ preview_imgUrl || FallBackImg } alt="avatar"/>
             </div>
@@ -48,5 +51,42 @@ const CardPreview = ({user, avatar: { preview_imgUrl }}) => {
     </section>
   )
 }
+
+CardPreview.propTypes = {
+  user: PropTypes.shape({
+    givenname: PropTypes.string,
+    surname: PropTypes.string,
+    email: PropTypes.string,
+    phone: PropTypes.string,
+    houseno: PropTypes.number,
+    street: PropTypes.string,
+    suburb: PropTypes.string,
+    state: PropTypes.string,
+    postcode: PropTypes.number,
+    country: PropTypes.string,
+  }),
+  avatar: PropTypes.shape({
+    preview_imgUrl: PropTypes.string,
+  }),
+};
+
+CardPreview.defaultProps = {
+  user: PropTypes.shape({
+    givenname: null,
+    surname: null,
+    email: null,
+    phone: null,
+    houseno: null,
+    street: null,
+    suburb: null,
+    state: null,
+    postcode: null,
+    country: null,
+  }),
+  avatar: PropTypes.shape({
+    preview_imgUrl: null,
+  }),
+};
+
 
 export default CardPreview;
