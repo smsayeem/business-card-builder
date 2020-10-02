@@ -5,8 +5,7 @@ import FallBackImg from '../Assets/sample_fallback.png';
 import './style.css';
 
 const CardPreview = ({ user, avatar: { preview_imgUrl } }) => {
-  const {givenname, surname, email, phone, houseno, street, suburb, state, postcode, country} = user;
-  console.log('user=', user);
+  const { givenname, surname, email, phone, houseno, street, suburb, state, postcode, country } = user;
   
   return (
     <section className="preview">
@@ -58,7 +57,7 @@ CardPreview.propTypes = {
     surname: PropTypes.string,
     email: PropTypes.string,
     phone: PropTypes.string,
-    houseno: PropTypes.number,
+    houseno: PropTypes.string,
     street: PropTypes.string,
     suburb: PropTypes.string,
     state: PropTypes.string,

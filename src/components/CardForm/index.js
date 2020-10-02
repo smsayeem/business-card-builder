@@ -52,7 +52,7 @@ const CardForm = ({ handleChange, handleSubmit, handleImage }) => {
           <div className="form-group">
             <label htmlFor="phone">phone</label>
             <input 
-              type="test" 
+              type="text" 
               id='phone' 
               name='phone' 
               className="form-input" 
@@ -67,7 +67,7 @@ const CardForm = ({ handleChange, handleSubmit, handleImage }) => {
           <div className="form-group">
             <label htmlFor="houseno">house name or #</label>
             <input 
-              type="number" 
+              type="text" 
               id='houseno' 
               name='houseno' 
               className="form-input" 
