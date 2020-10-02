@@ -1,38 +1,51 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+
+/* color variables */
+:root {
+  --primaryColor: rgb(61,79,97);
+  --primaryGrey: rgba(61,79,97, 0.8);
+  --primaryLight: rgba(61,79,97, 0.4);
+
+  --primaryBtn: rgb(93,168,221);
+  --primaryBtnDark: rgb(30, 112, 172);
+  --secondaryBtn: rgb(122,141,155);
+  --secondaryBtnDark: rgb(61,79,97);
+
+  --mainWhite: rgb(255,255,255);
+  --mainGrey: rgb(231,233,236);
+  --mainBlack: rgb(50,50,50);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--mainBlack);
+  color: var(--primaryColor);
+  font-family: 'Tinos', serif;
+}
+
+/* remove Arrows/Spinners from the input number fields */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  max-width: 1160px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--mainGrey);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (min-width: 769px){
+  .App {
+    flex-direction: row;
   }
 }
