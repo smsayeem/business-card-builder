@@ -1,0 +1,103 @@
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem 1rem 1rem;
+  background-color: var(--mainWhite);
+  width: 100%;
+}
+
+header h1{
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+.divider{
+  border-bottom: 1px solid var(--mainGrey);
+  margin: 2rem 0 1rem;
+}
+.divider p{
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  font-size: 0.8rem;
+  color: var(--primaryLight);
+}
+
+.form-center {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+}
+
+.form-group {
+  flex: 0 0 100%;
+}
+
+label {
+  display: block;
+  color: var(--primaryGrey);
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  margin: 1rem 0 0.2rem;
+  text-transform: uppercase;
+}
+
+.form-input {
+  border: 1px solid var(--primaryLight);
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  color: var(--mainBlack);
+  letter-spacing: 1px;
+}
+
+.btn-group {
+  padding: 1rem 0;
+  margin: 1rem 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 48%;
+  height: 2.7rem;
+  text-decoration: none;
+  color: var(--mainWhite);
+  background-color: var(--mainBlack);
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  outline: 0;
+  border: none;
+  border-radius: 4px;
+  padding: 0 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.btn:hover { box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); }
+.btn-avatar{ background-color: var(--secondaryBtn); }
+.btn-avatar:hover{ background-color: var(--secondaryBtnDark); }
+.btn-hcard{ background-color: var(--primaryBtn); }
+.btn-hcard:hover{ background-color: var(--primaryBtnDark); }
+
+@media screen and (min-width: 430px){
+  .form-container{ padding: 3rem; }
+  .form-group { flex: 0 0 50%; }
+  .form-group:nth-child(odd) { padding-right: 8px; }
+  .form-group:nth-child(even) { padding-left: 8px; }
+  .btn-group { margin: 1rem 0 0 0; }
+  .btn{ font-size: 1.1rem; }
+}
+
+@media screen and (min-width: 769px){
+  .form-container{ flex: 0 0 50%; }
+}

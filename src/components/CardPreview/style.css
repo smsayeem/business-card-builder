@@ -1,0 +1,145 @@
+.preview{
+  max-width: 375px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 2rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title{
+  margin: 0;
+  font-size: 1rem;
+  text-align: right;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--primaryLight);
+  padding-bottom: 6px;
+}
+.card-header{
+  height: 88px;
+  background-color: rgb(62,79,97);
+  color: #fff;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0.8rem;
+  position: relative;
+}
+
+.card-header h2{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin:0;
+}
+
+.card-avatar{
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 70px;
+  height: 89px;
+  background-color: var(--mainWhite);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.card-avatar img{
+  padding: 6px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-body{
+  padding: 24px 12px 18px;
+  background-color: #fff;
+  border-bottom: 2px solid var(--primaryLight);
+}
+
+.card-items{
+  display: flex;
+  border-bottom: 1px solid var(--mainGrey);
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
+}
+
+.label{
+  flex: 0 0 22%;
+  text-transform: uppercase;
+  color: rgb(62,79,97);
+  font-size: 0.6rem;
+}
+
+.info{
+  height: 1rem;
+  flex: 0 0 78%;
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  color: var(--mainBlack);
+}
+
+.card-special-item-wrapper{
+  display: flex;
+}
+
+.card-special-items{
+  flex: 0 0 50%;
+  display: flex;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--mainGrey);
+}
+
+.info-special{
+  height: 1rem;
+  margin-left: 16px;
+  font-size: .8rem;
+  letter-spacing: .2px;
+  color: var(--mainBlack);
+}
+
+@media screen and (min-width: 769px){
+  .label{ font-size: 0.7rem }
+  .info{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  } 
+  .info-special{
+    margin-left: 24px;
+    font-size: 0.9rem;
+    letter-spacing: .2px;
+  }
+}
+
+@media screen and (min-width: 1025px){
+  .preview{ min-width: 426px; }
+  .card-header{  
+    height: 100px;
+    padding: 0.9rem;
+  }
+  .card-header h2{ font-size: 1.7rem; }
+  .card-avatar{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 82px;
+    height: 104px;
+  }
+  .card-body{ padding: 26px 18px 22px; }
+  .label{ font-size: .8rem; }
+  .info{
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .info-special{
+    margin-left: 24px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+}
