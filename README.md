@@ -7,6 +7,7 @@
   i.e. mobile, tablet.
   -As the form is filled out, the preview card is automatically gets updated incluing image.
   -SEO added.
+  -Test added.
   -It was tested on latest Chrome, Safari and Firefox.
 
   ## Local Development
@@ -18,6 +19,7 @@ npm install
 
 npm start
 ```
+The application will be loaded on port 3000 by default unless this port is busy. http://localhost:3000 to view it in the browser.
 
 ## `npm run build`
 
@@ -25,8 +27,8 @@ Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br />
-And the app is ready to be deployed!
-The application will be loaded on port 3000 by default unless this port is busy. http://localhost:3000 to view it in the browser.
+And the app is ready to be deployed!<br />
+
 
 ## Markup validation
 https://validator.w3.org/#validate_by_input <br />
@@ -51,8 +53,3 @@ HTML markup has been validated
 ```
 ## Links
 github link: https://github.com/smsayeem/domain-hCard-builder.git
-
-### limitations
-- no backend functionality added
-- no custom form validation added
-- no test added

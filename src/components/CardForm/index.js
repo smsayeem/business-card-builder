@@ -125,9 +125,11 @@ const CardForm = ({ handleChange, handleSubmit, handleImage }) => {
             {/* this input allows to select image files. It is active but hidden as per design  */}
             <input id="upload-button" type='file' hidden/>
             {/* this button will call a function 'clickUpload' that will trigger the input above to upload an image */}
-            <button className = "btn btn-avatar" onClick = {clickUpload}>Upload Avatar</button>
+            <button name='upload' className = "btn btn-avatar" onClick = {clickUpload}>Upload Avatar</button>
             {/* no functionality added for this button as it is not part of the test */}
-            <button type = 'submit' className = "btn btn-hcard">Create hCard</button>
+            <button type="submit" name="submit" className = "btn btn-hcard" onClick={(e) => handleSubmit(e)}>
+              Create hCard
+            </button>
           </div>
         </section>
       </form>
@@ -142,9 +144,9 @@ CardForm.propTypes = {
 };
 
 CardForm.defaultProps = {
-  handleChange: null, 
-  handleSubmit: null, 
-  handleImage: null,
+  handleChange: ()=>{}, 
+  handleSubmit: ()=>{}, 
+  handleImage: ()=>{},
 };
 
 export default CardForm

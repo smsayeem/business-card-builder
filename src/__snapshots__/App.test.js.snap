@@ -1,0 +1,391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render the <App /> Component correctly 1`] = `
+<App>
+  <section
+    className="App"
+  >
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <SideEffect(NullComponent)
+        defer={true}
+        encodeSpecialCharacters={true}
+        meta={
+          Array [
+            Object {
+              "content": "hCard Builder is a simple app, publishing people, companies and organizations on the web",
+              "name": "description",
+            },
+          ]
+        }
+        title="hCard  Builder"
+        titleAttributes={Object {}}
+      >
+        <NullComponent
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "hCard Builder is a simple app, publishing people, companies and organizations on the web",
+                "name": "description",
+              },
+            ]
+          }
+          title="hCard  Builder"
+          titleAttributes={Object {}}
+        />
+      </SideEffect(NullComponent)>
+    </HelmetWrapper>
+    <CardForm
+      handleChange={[Function]}
+      handleImage={[Function]}
+      handleSubmit={[Function]}
+    >
+      <div
+        className="form-container"
+      >
+        <header>
+          <h1>
+            hCard Builder
+          </h1>
+        </header>
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="divider"
+          >
+            <p>
+              personal details
+            </p>
+          </div>
+          <section
+            className="form-center"
+          >
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="givenname"
+              >
+                given name
+              </label>
+              <input
+                className="form-input"
+                id="givenname"
+                name="givenname"
+                onChange={[Function]}
+                type="text"
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="surname"
+              >
+                surname
+              </label>
+              <input
+                className="form-input"
+                id="surname"
+                name="surname"
+                onChange={[Function]}
+                type="text"
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="email"
+              >
+                email
+              </label>
+              <input
+                className="form-input"
+                id="email"
+                name="email"
+                onChange={[Function]}
+                type="email"
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="phone"
+              >
+                phone
+              </label>
+              <input
+                className="form-input"
+                id="phone"
+                name="phone"
+                onChange={[Function]}
+                type="text"
+              />
+            </div>
+          </section>
+          <div
+            className="divider"
+          >
+            <p>
+              personal details
+            </p>
+          </div>
+          <section
+            className="form-center"
+          >
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="houseno"
+              >
+                house name or #
+              </label>
+              <input
+                className="form-input"
+                id="houseno"
+                name="houseno"
+                onChange={[Function]}
+                type="text"
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="street"
+              >
+                street
+              </label>
+              <input
+                className="form-input"
+                id="street"
+                name="street"
+                onChange={[Function]}
+                type="text"
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="suburb"
+              >
+                suburb
+              </label>
+              <input
+                className="form-input"
+                id="suburb"
+                name="suburb"
+                onChange={[Function]}
+                type="text"
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="state"
+              >
+                state
+              </label>
+              <input
+                className="form-input"
+                id="state"
+                name="state"
+                onChange={[Function]}
+                type="text"
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="postcode"
+              >
+                post code
+              </label>
+              <input
+                className="form-input"
+                id="postcode"
+                name="postcode"
+                onChange={[Function]}
+                type="number"
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="country"
+              >
+                country
+              </label>
+              <input
+                className="form-input"
+                id="country"
+                name="country"
+                onChange={[Function]}
+                type="text"
+              />
+            </div>
+            <div
+              className="btn-group "
+            >
+              <input
+                hidden={true}
+                id="upload-button"
+                type="file"
+              />
+              <button
+                className="btn btn-avatar"
+                name="upload"
+                onClick={[Function]}
+              >
+                Upload Avatar
+              </button>
+              <button
+                className="btn btn-hcard"
+                name="submit"
+                onClick={[Function]}
+                type="submit"
+              >
+                Create hCard
+              </button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </CardForm>
+    <CardPreview
+      avatar={
+        Object {
+          "preview_imgUrl": "",
+        }
+      }
+      user={Object {}}
+    >
+      <section
+        className="preview"
+      >
+        <h1
+          className="card-title"
+        >
+          hCard preview
+        </h1>
+        <header
+          className="card-header"
+        >
+          <h2>
+             
+          </h2>
+          <div
+            className="card-avatar"
+          >
+            <img
+              alt="avatar"
+              src="sample_fallback.png"
+            />
+          </div>
+        </header>
+        <section
+          className="card-body"
+        >
+          <div
+            className="card-items"
+          >
+            <div
+              className="label"
+            >
+              email
+            </div>
+            <div
+              className="info"
+            />
+          </div>
+          <div
+            className="card-items"
+          >
+            <div
+              className="label"
+            >
+              phone
+            </div>
+            <div
+              className="info"
+            />
+          </div>
+          <div
+            className="card-items"
+          >
+            <div
+              className="label"
+            >
+              address
+            </div>
+            <div
+              className="info"
+            >
+               
+            </div>
+          </div>
+          <div
+            className="card-items"
+          >
+            <div
+              className="label"
+              style={
+                Object {
+                  "visibility": "hidden",
+                }
+              }
+            >
+              address2
+            </div>
+            <div
+              className="info"
+            >
+               
+            </div>
+          </div>
+          <div
+            className="card-special-item-wrapper"
+          >
+            <div
+              className="card-special-items"
+            >
+              <div
+                className="label"
+              >
+                postcode
+              </div>
+              <div
+                className="info-special"
+              />
+            </div>
+            <div
+              className="card-special-items"
+            >
+              <div
+                className="label"
+              >
+                country
+              </div>
+              <div
+                className="info-special"
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+    </CardPreview>
+  </section>
+</App>
+`;

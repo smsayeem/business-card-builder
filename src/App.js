@@ -29,13 +29,14 @@ function App() {
   const handleSubmit =(e)=>{
     // form default action is prevented. it wont reset/refresh the form. 
     e.preventDefault();
+    console.log(e.target.name);
   }
 
   return (
     <section className='App'>
       {/* helmet is used for individual page meta info */}
       <Helmet>
-        <title>Turbo Todo</title>
+        <title>hCard  Builder</title>
         <meta name="description" content="hCard Builder is a simple app, publishing people, companies and organizations on the web" />
       </Helmet>
       <CardForm handleChange={handleChange} handleSubmit={handleSubmit} handleImage={handleImage} />

@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Component should render the <CardPreview /> Component correctly 1`] = `
+<section
+  className="preview"
+>
+  <h1
+    className="card-title"
+  >
+    hCard preview
+  </h1>
+  <header
+    className="card-header"
+  >
+    <h2>
+       
+    </h2>
+    <div
+      className="card-avatar"
+    >
+      <img
+        alt="avatar"
+        src="sample_fallback.png"
+      />
+    </div>
+  </header>
+  <section
+    className="card-body"
+  >
+    <div
+      className="card-items"
+    >
+      <div
+        className="label"
+      >
+        email
+      </div>
+      <div
+        className="info"
+      />
+    </div>
+    <div
+      className="card-items"
+    >
+      <div
+        className="label"
+      >
+        phone
+      </div>
+      <div
+        className="info"
+      />
+    </div>
+    <div
+      className="card-items"
+    >
+      <div
+        className="label"
+      >
+        address
+      </div>
+      <div
+        className="info"
+      >
+         
+      </div>
+    </div>
+    <div
+      className="card-items"
+    >
+      <div
+        className="label"
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
+      >
+        address2
+      </div>
+      <div
+        className="info"
+      >
+         
+      </div>
+    </div>
+    <div
+      className="card-special-item-wrapper"
+    >
+      <div
+        className="card-special-items"
+      >
+        <div
+          className="label"
+        >
+          postcode
+        </div>
+        <div
+          className="info-special"
+        />
+      </div>
+      <div
+        className="card-special-items"
+      >
+        <div
+          className="label"
+        >
+          country
+        </div>
+        <div
+          className="info-special"
+        />
+      </div>
+    </div>
+  </section>
+</section>
+`;
