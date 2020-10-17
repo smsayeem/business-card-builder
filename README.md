@@ -1,14 +1,12 @@
 # Domain hCard Builder Project
 
 ## Motivation
-  -Its just a front end app, no back end added.
-  -Layout is responsive.
-  -Layout for desktop screen was provided therefore I became the designer to design the layout for other screen sizes
-  i.e. mobile, tablet.
-  -As the form is filled out, the preview card is automatically gets updated incluing image.
-  -SEO added.
-  -Test added.
-  -It was tested on latest Chrome, Safari and Firefox.
+  -Its just a front end app, no back end added.<br />
+  -Layout is responsive.<br />
+  -As the form is filled out, the preview card is automatically gets updated incluing image.<br />
+  -SEO added.<br />
+  -Test added.<br />
+  -It was tested on latest Chrome, Safari and Firefox.<br />
 
   ## Local Development
 
@@ -21,7 +19,9 @@ npm start
 ```
 The application will be loaded on port 3000 by default unless this port is busy. http://localhost:3000 to view it in the browser.
 
-## `npm run build`
+```bash
+npm run build
+```
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -39,14 +39,23 @@ HTML markup has been validated
 
 ```
 |-- src
-    |-- components
+    |-- |components
     |   |-- Assets
     |   |-- CardForm
+    |       |-- CardForm
+    |           |-- Divider
+    |               |-- index.js
+    |           |-- FormElement
+    |               |-- index.js
     |       |-- index.js
     |       |-- style.css
     |   |-- CardPrevew
     |       |-- index.js
     |       |-- style.css
+    |-- utilities
+    |   |-- helper
+    |       |-- isValidEmail.js
+    |       |-- isValidForm.js
     |-- App.js
     |-- App.css
     |-- Index.js
