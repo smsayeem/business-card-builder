@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Login Component should render the <CardPreview /> Component correctly 1`] = `
+exports[`<CardPreview /> Component should render the <CardPreview /> Component correctly 1`] = `
 <section
   className="preview"
 >
@@ -13,7 +13,9 @@ exports[`Login Component should render the <CardPreview /> Component correctly 1
     className="card-header"
   >
     <h2>
+      sam
        
+      sadot
     </h2>
     <div
       className="card-avatar"
@@ -37,7 +39,9 @@ exports[`Login Component should render the <CardPreview /> Component correctly 1
       </div>
       <div
         className="info"
-      />
+      >
+        sam@sam.com
+      </div>
     </div>
     <div
       className="card-items"
@@ -49,7 +53,9 @@ exports[`Login Component should render the <CardPreview /> Component correctly 1
       </div>
       <div
         className="info"
-      />
+      >
+        0433530825
+      </div>
     </div>
     <div
       className="card-items"
@@ -62,7 +68,9 @@ exports[`Login Component should render the <CardPreview /> Component correctly 1
       <div
         className="info"
       >
+        1a
          
+        King street
       </div>
     </div>
     <div
@@ -81,7 +89,9 @@ exports[`Login Component should render the <CardPreview /> Component correctly 1
       <div
         className="info"
       >
+        Sydney,
          
+        NSW
       </div>
     </div>
     <div
@@ -97,7 +107,9 @@ exports[`Login Component should render the <CardPreview /> Component correctly 1
         </div>
         <div
           className="info-special"
-        />
+        >
+          2000
+        </div>
       </div>
       <div
         className="card-special-items"
@@ -109,7 +121,9 @@ exports[`Login Component should render the <CardPreview /> Component correctly 1
         </div>
         <div
           className="info-special"
-        />
+        >
+          Australia
+        </div>
       </div>
     </div>
   </section>

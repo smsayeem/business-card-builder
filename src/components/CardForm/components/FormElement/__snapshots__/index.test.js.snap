@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormElement />  Component existence check should render the <FormElement /> Component correctly 1`] = `
+<Fragment>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor=""
+    />
+    <select
+      className="form-input"
+      name=""
+      onChange={[Function]}
+    >
+      <option
+        value="-1"
+      >
+        Select your state
+      </option>
+      <option
+        value="NSW"
+      >
+        NSW
+      </option>
+      <option
+        value="ACT"
+      >
+        ACT
+      </option>
+      <option
+        value="VIC"
+      >
+        VIC
+      </option>
+      <option
+        value="QLD"
+      >
+        QLD
+      </option>
+      <option
+        value="TAS"
+      >
+        TAS
+      </option>
+      <option
+        value="WA"
+      >
+        WA
+      </option>
+    </select>
+  </div>
+</Fragment>
+`;

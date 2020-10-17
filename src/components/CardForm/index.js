@@ -1,133 +1,54 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FormElement from './components/FormElement';
+import isvalidForm from '../../utilities/helper/isvalidForm';
+import Divider from './components/Divider'
 
 import './style.css';
 
 const CardForm = ({ handleChange, handleSubmit, handleImage }) => {
 
-
   // when 'Upload Avatar' button is clicked this function targets the input ('#upload-button') and add a callback function to upload image
   const clickUpload=()=>{
     const uploadBtn = document.querySelector('#upload-button');
     uploadBtn.click();
-    uploadBtn.addEventListener('change', handleImage)
   }
 
+  const validateFormData = (e) => {
+    e.preventDefault();
+    isvalidForm(e) && handleSubmit(e);
+  }
   return (
     <div className="form-container">
       <header>
         <h1>hCard Builder</h1>
       </header>
-      <form onSubmit={handleSubmit}>
-        <div className="divider">
-          <p>personal details</p>
-        </div>
-        {/* input fields */}
+      <form onSubmit={validateFormData}>
+        <Divider text="personal details" />
         <section className="form-center">
-          <div className="form-group">
-            <label htmlFor="givenname">given name</label>
-            <input 
-              type="text" 
-              id='givenname' 
-              name='givenname' 
-              className="form-input" 
-              onChange={handleChange} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="surname">surname</label>
-            <input 
-              type="text" 
-              id='surname' 
-              name='surname' 
-              className="form-input"           
-              onChange={handleChange} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">email</label>
-            <input 
-              type="email" 
-              id='email' 
-              name='email' 
-              className="form-input"           
-              onChange={handleChange} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="phone">phone</label>
-            <input 
-              type="text" 
-              id='phone' 
-              name='phone' 
-              className="form-input" 
-              onChange={handleChange} />
-          </div>
-          </section>
-
-          <div className="divider">
-            <p>personal details</p>
-          </div>
-          <section className="form-center">
-          <div className="form-group">
-            <label htmlFor="houseno">house name or #</label>
-            <input 
-              type="text" 
-              id='houseno' 
-              name='houseno' 
-              className="form-input" 
-              onChange={handleChange} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="street">street</label>
-            <input 
-              type="text" 
-              id='street' 
-              name='street' 
-              className="form-input" 
-              onChange={handleChange} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="suburb">suburb</label>
-            <input 
-              type="text" 
-              id='suburb' 
-              name='suburb' 
-              className="form-input" 
-              onChange={handleChange} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="state">state</label>
-            <input 
-              type="text" 
-              id='state' 
-              name='state' 
-              className="form-input" 
-              onChange={handleChange} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="postcode">post code</label>
-            <input 
-              type="number" 
-              id='postcode' 
-              name='postcode' 
-              className="form-input" 
-              onChange={handleChange} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="country">country</label>
-            <input 
-              type="text" 
-              id='country' 
-              name='country' 
-              className="form-input" 
-              onChange={handleChange} />
-          </div>
+          <FormElement formField="input" handleChange={handleChange} name="givenname" title="given name" type="text" />
+          <FormElement formField="input" handleChange={handleChange} name="surname" title="surname" type="text" />
+          <FormElement formField="input" handleChange={handleChange} name="email" title="email" type="email" />
+          <FormElement formField="input" handleChange={handleChange} name="phone" title="phone" type="text" />
+        </section>
+        <Divider text="personal details" />
+        <section className="form-center">
+          <FormElement formField="input" handleChange={handleChange} name="houseno" title="houseno" type="text" />
+          <FormElement formField="input" handleChange={handleChange} name="street" title="street" type="text" />
+          <FormElement formField="input" handleChange={handleChange} name="suburb" title="suburb" type="text" />
+          <FormElement formField="select" handleChange={handleChange} name="state" title="state" type="text" />
+          <FormElement formField="input" handleChange={handleChange} name="postcode" title="postcode" type="number" />
+          <FormElement formField="input" handleChange={handleChange} name="country" title="country" type="text" />
           {/* buttons */}
           <div className="btn-group ">
             {/* this input allows to select image files. It is active but hidden as per design  */}
-            <input id="upload-button" type='file' hidden/>
+            <input name="img-upload" id="upload-button" hidden type='file' onChange={handleImage} />
+
             {/* this button will call a function 'clickUpload' that will trigger the input above to upload an image */}
-            <button name='upload' className = "btn btn-avatar" onClick = {clickUpload}>Upload Avatar</button>
+            <input readOnly name="upload" id="btn-avatar" className = "btn btn-avatar" onClick = {clickUpload}  value="Upload Avatar" />
+            
             {/* no functionality added for this button as it is not part of the test */}
-            <button type="submit" name="submit" className = "btn btn-hcard" onClick={(e) => handleSubmit(e)}>
+            <button type="submit" name="submit" className = "btn btn-hcard">
               Create hCard
             </button>
           </div>

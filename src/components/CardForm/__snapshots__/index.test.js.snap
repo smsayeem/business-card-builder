@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Login Component should render the <CardForm /> Component correctly 1`] = `
+exports[`<CardForm /> component existence cehck should render the <CardForm /> Component correctly 1`] = `
 <div
   className="form-container"
 >
@@ -12,206 +12,110 @@ exports[`Login Component should render the <CardForm /> Component correctly 1`] 
   <form
     onSubmit={[Function]}
   >
-    <div
-      className="divider"
-    >
-      <p>
-        personal details
-      </p>
-    </div>
+    <Divider
+      text="personal details"
+    />
     <section
       className="form-center"
     >
-      <div
-        className="form-group"
-      >
-        <label
-          htmlFor="givenname"
-        >
-          given name
-        </label>
-        <input
-          className="form-input"
-          id="givenname"
-          name="givenname"
-          onChange={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="form-group"
-      >
-        <label
-          htmlFor="surname"
-        >
-          surname
-        </label>
-        <input
-          className="form-input"
-          id="surname"
-          name="surname"
-          onChange={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="form-group"
-      >
-        <label
-          htmlFor="email"
-        >
-          email
-        </label>
-        <input
-          className="form-input"
-          id="email"
-          name="email"
-          onChange={[Function]}
-          type="email"
-        />
-      </div>
-      <div
-        className="form-group"
-      >
-        <label
-          htmlFor="phone"
-        >
-          phone
-        </label>
-        <input
-          className="form-input"
-          id="phone"
-          name="phone"
-          onChange={[Function]}
-          type="text"
-        />
-      </div>
+      <FormElement
+        formField="input"
+        handleChange={[Function]}
+        name="givenname"
+        title="given name"
+        type="text"
+      />
+      <FormElement
+        formField="input"
+        handleChange={[Function]}
+        name="surname"
+        title="surname"
+        type="text"
+      />
+      <FormElement
+        formField="input"
+        handleChange={[Function]}
+        name="email"
+        title="email"
+        type="email"
+      />
+      <FormElement
+        formField="input"
+        handleChange={[Function]}
+        name="phone"
+        title="phone"
+        type="text"
+      />
     </section>
-    <div
-      className="divider"
-    >
-      <p>
-        personal details
-      </p>
-    </div>
+    <Divider
+      text="personal details"
+    />
     <section
       className="form-center"
     >
-      <div
-        className="form-group"
-      >
-        <label
-          htmlFor="houseno"
-        >
-          house name or #
-        </label>
-        <input
-          className="form-input"
-          id="houseno"
-          name="houseno"
-          onChange={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="form-group"
-      >
-        <label
-          htmlFor="street"
-        >
-          street
-        </label>
-        <input
-          className="form-input"
-          id="street"
-          name="street"
-          onChange={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="form-group"
-      >
-        <label
-          htmlFor="suburb"
-        >
-          suburb
-        </label>
-        <input
-          className="form-input"
-          id="suburb"
-          name="suburb"
-          onChange={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="form-group"
-      >
-        <label
-          htmlFor="state"
-        >
-          state
-        </label>
-        <input
-          className="form-input"
-          id="state"
-          name="state"
-          onChange={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="form-group"
-      >
-        <label
-          htmlFor="postcode"
-        >
-          post code
-        </label>
-        <input
-          className="form-input"
-          id="postcode"
-          name="postcode"
-          onChange={[Function]}
-          type="number"
-        />
-      </div>
-      <div
-        className="form-group"
-      >
-        <label
-          htmlFor="country"
-        >
-          country
-        </label>
-        <input
-          className="form-input"
-          id="country"
-          name="country"
-          onChange={[Function]}
-          type="text"
-        />
-      </div>
+      <FormElement
+        formField="input"
+        handleChange={[Function]}
+        name="houseno"
+        title="houseno"
+        type="text"
+      />
+      <FormElement
+        formField="input"
+        handleChange={[Function]}
+        name="street"
+        title="street"
+        type="text"
+      />
+      <FormElement
+        formField="input"
+        handleChange={[Function]}
+        name="suburb"
+        title="suburb"
+        type="text"
+      />
+      <FormElement
+        formField="select"
+        handleChange={[Function]}
+        name="state"
+        title="state"
+        type="text"
+      />
+      <FormElement
+        formField="input"
+        handleChange={[Function]}
+        name="postcode"
+        title="postcode"
+        type="number"
+      />
+      <FormElement
+        formField="input"
+        handleChange={[Function]}
+        name="country"
+        title="country"
+        type="text"
+      />
       <div
         className="btn-group "
       >
         <input
           hidden={true}
           id="upload-button"
+          name="img-upload"
+          onChange={[Function]}
           type="file"
         />
-        <button
+        <input
           className="btn btn-avatar"
+          id="btn-avatar"
           name="upload"
           onClick={[Function]}
-        >
-          Upload Avatar
-        </button>
+          readOnly={true}
+          value="Upload Avatar"
+        />
         <button
           className="btn btn-hcard"
           name="submit"
-          onClick={[Function]}
           type="submit"
         >
           Create hCard

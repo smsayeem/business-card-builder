@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should render the <App /> Component correctly 1`] = `
+exports[`App and other components existence check should render the <App /> Component correctly 1`] = `
 <App>
   <section
     className="App"
@@ -55,206 +55,321 @@ exports[`App should render the <App /> Component correctly 1`] = `
         <form
           onSubmit={[Function]}
         >
-          <div
-            className="divider"
+          <Divider
+            text="personal details"
           >
-            <p>
-              personal details
-            </p>
-          </div>
+            <div
+              className="divider"
+            >
+              <p>
+                personal details
+              </p>
+            </div>
+          </Divider>
           <section
             className="form-center"
           >
-            <div
-              className="form-group"
+            <FormElement
+              formField="input"
+              handleChange={[Function]}
+              name="givenname"
+              title="given name"
+              type="text"
             >
-              <label
-                htmlFor="givenname"
+              <div
+                className="form-group"
               >
-                given name
-              </label>
-              <input
-                className="form-input"
-                id="givenname"
-                name="givenname"
-                onChange={[Function]}
-                type="text"
-              />
-            </div>
-            <div
-              className="form-group"
+                <label
+                  htmlFor="givenname"
+                >
+                  given name
+                </label>
+                <input
+                  className="form-input"
+                  name="givenname"
+                  onChange={[Function]}
+                  type="text"
+                />
+              </div>
+            </FormElement>
+            <FormElement
+              formField="input"
+              handleChange={[Function]}
+              name="surname"
+              title="surname"
+              type="text"
             >
-              <label
-                htmlFor="surname"
+              <div
+                className="form-group"
               >
-                surname
-              </label>
-              <input
-                className="form-input"
-                id="surname"
-                name="surname"
-                onChange={[Function]}
-                type="text"
-              />
-            </div>
-            <div
-              className="form-group"
+                <label
+                  htmlFor="surname"
+                >
+                  surname
+                </label>
+                <input
+                  className="form-input"
+                  name="surname"
+                  onChange={[Function]}
+                  type="text"
+                />
+              </div>
+            </FormElement>
+            <FormElement
+              formField="input"
+              handleChange={[Function]}
+              name="email"
+              title="email"
+              type="email"
             >
-              <label
-                htmlFor="email"
+              <div
+                className="form-group"
               >
-                email
-              </label>
-              <input
-                className="form-input"
-                id="email"
-                name="email"
-                onChange={[Function]}
-                type="email"
-              />
-            </div>
-            <div
-              className="form-group"
+                <label
+                  htmlFor="email"
+                >
+                  email
+                </label>
+                <input
+                  className="form-input"
+                  name="email"
+                  onChange={[Function]}
+                  type="email"
+                />
+              </div>
+            </FormElement>
+            <FormElement
+              formField="input"
+              handleChange={[Function]}
+              name="phone"
+              title="phone"
+              type="text"
             >
-              <label
-                htmlFor="phone"
+              <div
+                className="form-group"
               >
-                phone
-              </label>
-              <input
-                className="form-input"
-                id="phone"
-                name="phone"
-                onChange={[Function]}
-                type="text"
-              />
-            </div>
+                <label
+                  htmlFor="phone"
+                >
+                  phone
+                </label>
+                <input
+                  className="form-input"
+                  name="phone"
+                  onChange={[Function]}
+                  type="text"
+                />
+              </div>
+            </FormElement>
           </section>
-          <div
-            className="divider"
+          <Divider
+            text="personal details"
           >
-            <p>
-              personal details
-            </p>
-          </div>
+            <div
+              className="divider"
+            >
+              <p>
+                personal details
+              </p>
+            </div>
+          </Divider>
           <section
             className="form-center"
           >
-            <div
-              className="form-group"
+            <FormElement
+              formField="input"
+              handleChange={[Function]}
+              name="houseno"
+              title="houseno"
+              type="text"
             >
-              <label
-                htmlFor="houseno"
+              <div
+                className="form-group"
               >
-                house name or #
-              </label>
-              <input
-                className="form-input"
-                id="houseno"
-                name="houseno"
-                onChange={[Function]}
-                type="text"
-              />
-            </div>
-            <div
-              className="form-group"
+                <label
+                  htmlFor="houseno"
+                >
+                  houseno
+                </label>
+                <input
+                  className="form-input"
+                  name="houseno"
+                  onChange={[Function]}
+                  type="text"
+                />
+              </div>
+            </FormElement>
+            <FormElement
+              formField="input"
+              handleChange={[Function]}
+              name="street"
+              title="street"
+              type="text"
             >
-              <label
-                htmlFor="street"
+              <div
+                className="form-group"
               >
-                street
-              </label>
-              <input
-                className="form-input"
-                id="street"
-                name="street"
-                onChange={[Function]}
-                type="text"
-              />
-            </div>
-            <div
-              className="form-group"
+                <label
+                  htmlFor="street"
+                >
+                  street
+                </label>
+                <input
+                  className="form-input"
+                  name="street"
+                  onChange={[Function]}
+                  type="text"
+                />
+              </div>
+            </FormElement>
+            <FormElement
+              formField="input"
+              handleChange={[Function]}
+              name="suburb"
+              title="suburb"
+              type="text"
             >
-              <label
-                htmlFor="suburb"
+              <div
+                className="form-group"
               >
-                suburb
-              </label>
-              <input
-                className="form-input"
-                id="suburb"
-                name="suburb"
-                onChange={[Function]}
-                type="text"
-              />
-            </div>
-            <div
-              className="form-group"
+                <label
+                  htmlFor="suburb"
+                >
+                  suburb
+                </label>
+                <input
+                  className="form-input"
+                  name="suburb"
+                  onChange={[Function]}
+                  type="text"
+                />
+              </div>
+            </FormElement>
+            <FormElement
+              formField="select"
+              handleChange={[Function]}
+              name="state"
+              title="state"
+              type="text"
             >
-              <label
-                htmlFor="state"
+              <div
+                className="form-group"
               >
-                state
-              </label>
-              <input
-                className="form-input"
-                id="state"
-                name="state"
-                onChange={[Function]}
-                type="text"
-              />
-            </div>
-            <div
-              className="form-group"
+                <label
+                  htmlFor="state"
+                >
+                  state
+                </label>
+                <select
+                  className="form-input"
+                  name="state"
+                  onChange={[Function]}
+                >
+                  <option
+                    value="-1"
+                  >
+                    Select your state
+                  </option>
+                  <option
+                    value="NSW"
+                  >
+                    NSW
+                  </option>
+                  <option
+                    value="ACT"
+                  >
+                    ACT
+                  </option>
+                  <option
+                    value="VIC"
+                  >
+                    VIC
+                  </option>
+                  <option
+                    value="QLD"
+                  >
+                    QLD
+                  </option>
+                  <option
+                    value="TAS"
+                  >
+                    TAS
+                  </option>
+                  <option
+                    value="WA"
+                  >
+                    WA
+                  </option>
+                </select>
+              </div>
+            </FormElement>
+            <FormElement
+              formField="input"
+              handleChange={[Function]}
+              name="postcode"
+              title="postcode"
+              type="number"
             >
-              <label
-                htmlFor="postcode"
+              <div
+                className="form-group"
               >
-                post code
-              </label>
-              <input
-                className="form-input"
-                id="postcode"
-                name="postcode"
-                onChange={[Function]}
-                type="number"
-              />
-            </div>
-            <div
-              className="form-group"
+                <label
+                  htmlFor="postcode"
+                >
+                  postcode
+                </label>
+                <input
+                  className="form-input"
+                  name="postcode"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </div>
+            </FormElement>
+            <FormElement
+              formField="input"
+              handleChange={[Function]}
+              name="country"
+              title="country"
+              type="text"
             >
-              <label
-                htmlFor="country"
+              <div
+                className="form-group"
               >
-                country
-              </label>
-              <input
-                className="form-input"
-                id="country"
-                name="country"
-                onChange={[Function]}
-                type="text"
-              />
-            </div>
+                <label
+                  htmlFor="country"
+                >
+                  country
+                </label>
+                <input
+                  className="form-input"
+                  name="country"
+                  onChange={[Function]}
+                  type="text"
+                />
+              </div>
+            </FormElement>
             <div
               className="btn-group "
             >
               <input
                 hidden={true}
                 id="upload-button"
+                name="img-upload"
+                onChange={[Function]}
                 type="file"
               />
-              <button
+              <input
                 className="btn btn-avatar"
+                id="btn-avatar"
                 name="upload"
                 onClick={[Function]}
-              >
-                Upload Avatar
-              </button>
+                readOnly={true}
+                value="Upload Avatar"
+              />
               <button
                 className="btn btn-hcard"
                 name="submit"
-                onClick={[Function]}
                 type="submit"
               >
                 Create hCard

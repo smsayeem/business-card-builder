@@ -4,8 +4,9 @@ import FallBackImg from '../Assets/sample_fallback.png';
 
 import './style.css';
 
-const CardPreview = ({ user, avatar: { preview_imgUrl } }) => {
+const CardPreview = ({ user, avatar }) => {
   const { givenname, surname, email, phone, houseno, street, suburb, state, postcode, country } = user;
+  const { preview_imgUrl } = avatar;
   
   return (
     <section className="preview">
@@ -63,28 +64,15 @@ CardPreview.propTypes = {
     state: PropTypes.string,
     postcode: PropTypes.number,
     country: PropTypes.string,
-  }),
+  }).isRequired,
   avatar: PropTypes.shape({
     preview_imgUrl: PropTypes.string,
-  }),
+  }).isRequired,
 };
 
-CardPreview.defaultProps = {
-  user: PropTypes.shape({
-    givenname: null,
-    surname: null,
-    email: null,
-    phone: null,
-    houseno: null,
-    street: null,
-    suburb: null,
-    state: null,
-    postcode: null,
-    country: null,
-  }),
-  avatar: PropTypes.shape({
-    preview_imgUrl: null,
-  }),
+CardPreview.propTypes = {
+  user: {},
+  avatar: { preview_imgUrl: '' },
 };
 
 
