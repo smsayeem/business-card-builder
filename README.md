@@ -42,7 +42,7 @@ HTML markup has been validated
     |-- |components
     |   |-- Assets
     |   |-- CardForm
-    |       |-- CardForm
+    |       |-- components
     |           |-- Divider
     |               |-- index.js
     |           |-- FormElement
