@@ -1,4 +1,4 @@
-# Domain hCard Builder Project
+# Business Card Builder Project
 
 ## Motivation
   -Its just a front end app, no back end added.<br />
@@ -60,5 +60,3 @@ HTML markup has been validated
     |-- App.css
     |-- Index.js
 ```
-## Links
-github link: https://github.com/smsayeem/domain-hCard-builder.git
